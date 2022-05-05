@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Главная Catenergy</title>
 </head>
 
@@ -170,6 +174,7 @@
         </h3>
         <ul class="action-list">
           <li class="action-list__item">
+            <!--может быть лучше сделать иконки через псевдоэлементы??? -->
             <svg class="action-list__icon" width="60" height="60" viewBox="0 0 60 60" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <rect width="60" height="60" fill="#68B738" />
@@ -317,9 +322,10 @@
             </li>
           </ul>
           <div class="example-slider slider-controls">
-            <!-- слова было / стало — псевдоэлементы? -->
+            <button class="slider-controls__button">было</button>
             <div class="slider-controls__bar--fill"></div>
             <div class="slider-controls__bar--empty"></div>
+            <button class="slider-controls__button">стало</button>
           </div>
         </div>
       </div>
@@ -338,12 +344,12 @@
           </div>
         </div>
       </div>
-    </section>
-    <div class="contacts-map">
-      <iframe
+      <div class="contacts-map">
+        <iframe
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A8013a584a00272ece2c4b434b3567f47ed22b48a83d0f642ef1650a9a1b01ad2&amp;source=constructor"
         width="362" height="320"></iframe>
-    </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
