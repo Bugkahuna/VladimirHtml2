@@ -1,0 +1,38 @@
+.header-nav {
+
+  &__button {
+    display: block;
+    background-color: $basic-white;
+    position: relative;
+    padding: 0;
+    border: none;
+  }
+
+  &__burger,
+  &__burger::after,
+  &__burger::before {
+    width: 24px;
+    height: 2px;
+    display: block;
+    background-color: $basick-black;
+  }
+
+  &__burger::after,
+  &__burger::before {
+    position: absolute;
+    content: "";
+    top: -8px;
+  }
+
+  &__burger::before {
+    top: 8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

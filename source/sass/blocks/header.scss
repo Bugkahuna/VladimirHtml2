@@ -1,0 +1,24 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    display: block;
+  }
+}
+

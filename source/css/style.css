@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  color: #000000;
+}
+
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1300px;
+    padding: 0 40px;
+  }
+}
+
+.header {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  background-color: #68B738;
+}
+@media (min-width: 768px) {
+  .header {
+    padding-top: 25px;
+  }
+}
+@media (min-width: 1300px) {
+  .header {
+    padding-top: 55px;
+  }
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__link {
+  display: block;
+}
+
+.header-nav__button {
+  display: block;
+  background-color: #ffffff;
+  position: relative;
+  padding: 0;
+  border: none;
+}
+.header-nav__burger, .header-nav__burger::after, .header-nav__burger::before {
+  width: 24px;
+  height: 2px;
+  display: block;
+  background-color: #000000;
+}
+.header-nav__burger::after, .header-nav__burger::before {
+  position: absolute;
+  content: "";
+  top: -8px;
+}
+.header-nav__burger::before {
+  top: 8px;
+}
+@media (min-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+}
+@media (min-width: 1300px) {
+  .header-nav {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
